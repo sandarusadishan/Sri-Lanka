@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sri Lanka Tourism</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/index.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-black sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="../assets/logo/lion-removebg-preview.png" alt="Sri Lanka Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+              Destinations
+            </a>
+            <ul class="dropdown-menu text">
+              <li><a class="dropdown-item" href="beaches.html">Beaches</a></li>
+              <li><a class="dropdown-item" href="hills.html">Hill Country</a></li>
+              <li><a class="dropdown-item" href="cultural.html">Cultural Triangle</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#activities">Activities</a></li>
+          <li class="nav-item"><a class="nav-link" href="#food">Food & Cuisine</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section with Carousel -->
+  <section id="home" class="home bg-black text-white border-radius 10%">
+    <div id="home-carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <img src="../assets/places/ella 1.jpg" class="d-block w-100" alt="Sri Lanka">
+          <div class="carousel-caption text-center">
+            <h1>Welcome to Sri Lanka</h1>
+            <p>Discover the beauty, culture, and adventure of Sri Lanka's tropical paradise.</p>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <img src="../assets/places/iStock-1165825985.jpg" class="d-block w-100" alt="Nature in Sri Lanka">
+          <div class="carousel-caption text-center">
+            <h1>Explore Nature's Wonder</h1>
+            <p>Breathtaking landscapes and stunning biodiversity await you.</p>
+          </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <img src="../assets/places/sigiriya.webp" class="d-block w-100" alt="Sri Lankan Culture">
+          <div class="carousel-caption text-center">
+            <h1>Rich Culture and Heritage</h1>
+            <p>Experience the warmth of Sri Lanka's traditions and history.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#home-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#home-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Destinations Section -->
+  <section id="destinations" class="py-5 ">
+    <div class="container ">
+      <h2 class="text-center mb-5">Destinations</h2>
+      <div class="row g-4">
+        <!-- Beaches -->
+        <div class="col-lg-4 col-md-6 text-white">
+          <div class="card bg-black text-white">
+            <img src="../assets/places/IMG_5182.jpg" class="card-img-top" alt="Beaches">
+            <div class="card-body text-center">
+              <h3>Beaches</h3>
+              <p>Explore Sri Lanka's stunning beaches, perfect for relaxation and water sports.</p>
+              <a href="beaches.html" class="btn btn-outline-light">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Hill Country -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card bg-black text-white">
+            <img src="../assets/places/Hiking-in-the-Hills-outside-of-Kandy-3.jpeg" class="card-img-top" alt="Hill Country">
+            <div class="card-body text-center">
+              <h3>Hill Country</h3>
+              <p>Immerse yourself in the lush greenery and breathtaking views of the hill country.</p>
+              <a href="hills.html" class="btn btn-outline-light">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Cultural Triangle -->
+        <div class="col-lg-4 col-md-12">
+          <div class="card bg-black text-white">
+            <img src="../assets/places/waterfall-in-Sri-Lanka.jpg" class="card-img-top" alt="Cultural Triangle">
+            <div class="card-body text-center">
+              <h3>Cultural Triangle</h3>
+              <p>Discover ancient wonders and Sri Lanka's rich cultural heritage.</p>
+              <a href="cultural.html" class="btn btn-outline-light">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Discover Sri Lanka. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

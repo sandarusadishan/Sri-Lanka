@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hill Country of Sri Lanka</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: white;
+        }
+        .navbar {
+            background-color: black;
+        }
+        .navbar-brand img {
+            height: 50px;
+        }
+        .navbar-nav .nav-link {
+            color: #fff !important;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #f0a500 !important;
+        }
+        .hero-section {
+            background: url('../assets/places/hill-country-hero.jpg') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .hero-section h1 {
+            font-size: 3rem;
+            color: white;
+        }
+        .hill-section {
+            padding: 4rem 0;
+        }
+        .hill-section h2 {
+            color: #f0a500;
+            margin-bottom: 2rem;
+        }
+        .hill-card {
+            background-color: #2a2a2a;
+            border: none;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .hill-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .hill-card img {
+            border-radius: 10px;
+        }
+        .hill-card h3 {
+            margin-top: 1rem;
+            font-size: 1.5rem;
+        }
+        .hill-card p {
+            color: #ccc;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="../assets/logo/lion-removebg-preview.png" alt="Sri Lanka Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="beaches.html">Beaches</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hills.html">Hill Country</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cultural.html">Cultural Triangle</a></li>
+                    <li class="nav-item"><a class="nav-link" href="activities.html">Activities</a></li>
+                    <li class="nav-item"><a class="nav-link" href="food.html">Food & Cuisine</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <h1>Hill Country of Sri Lanka</h1>
+    </section>
+
+    <!-- Hill Country Sections -->
+    <section class="hill-section">
+        <div class="container">
+            <h2 class="text-center">Explore Our Beautiful Hill Country</h2>
+            <div class="row g-4">
+                <!-- Hill Country 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card hill-card">
+                        <img src="../assets/places/ella.jpg" class="card-img-top" alt="Ella">
+                        <div class="card-body text-center">
+                            <h3>Ella</h3>
+                            <p>Ella is known for its breathtaking views, lush greenery, and the famous Nine Arches Bridge.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hill Country 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card hill-card">
+                        <img src="../assets/places/nuwara-eliya.jpg" class="card-img-top" alt="Nuwara Eliya">
+                        <div class="card-body text-center">
+                            <h3>Nuwara Eliya</h3>
+                            <p>Nuwara Eliya, also known as "Little England," is famous for its cool climate and tea plantations.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hill Country 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card hill-card">
+                        <img src="../assets/places/kandy.jpg" class="card-img-top" alt="Kandy">
+                        <div class="card-body text-center">
+                            <h3>Kandy</h3>
+                            <p>Kandy is home to the Temple of the Tooth Relic and is surrounded by scenic hills and lakes.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hill Country 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card hill-card">
+                        <img src="../assets/places/haputale.jpg" class="card-img-top" alt="Haputale">
+                        <div class="card-body text-center">
+                            <h3>Haputale</h3>
+                            <p>Haputale offers stunning views of the southern plains and is a great spot for hiking and nature walks.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hill Country 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card hill-card">
+                        <img src="../assets/places/bandarawela.jpg" class="card-img-top" alt="Bandarawela">
+                        <div class="card-body text-center">
+                            <h3>Bandarawela</h3>
+                            <p>Bandarawela is a peaceful town known for its pleasant climate and beautiful tea estates.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hill Country 6 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card hill-card">
+                        <img src="../assets/places/hatton.jpg" class="card-img-top" alt="Hatton">
+                        <div class="card-body text-center">
+                            <h3>Hatton</h3>
+                            <p>Hatton is the gateway to Adam's Peak, a popular pilgrimage site with stunning sunrise views.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Discover Sri Lanka. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
