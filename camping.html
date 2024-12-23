@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camping Sites of Sri Lanka</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: white;
+            scroll-behavior: smooth; /* Smooth scrolling */
+        }
+        .navbar {
+            background-color: black;
+        }
+        .navbar-brand img {
+            height: 50px;
+        }
+        .navbar-nav .nav-link {
+            color: #fff !important;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #f0a500 !important;
+        }
+        /* Hero Section */
+        #home-carousel {
+            height: 100vh;
+        }
+        .carousel-inner {
+            height: 100%;
+        }
+        .carousel-item img {
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(70%);
+        }
+        .carousel-caption {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .carousel-caption h1 {
+            font-size: 4rem;
+            font-weight: bold;
+        }
+        .carousel-caption p {
+            font-size: 1.5rem;
+        }
+        .camping-section {
+            padding: 4rem 0;
+        }
+        .camping-section h2 {
+            color: #f0a500;
+            margin-bottom: 2rem;
+        }
+        .camping-card {
+            background-color: #2a2a2a;
+            border: none;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .camping-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .camping-card img {
+            border-radius: 10px;
+        }
+        .camping-card h3 {
+            margin-top: 1rem;
+            font-size: 1.5rem;
+        }
+        .camping-card p {
+            color: #ccc;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            padding: 20px 0;
+        }
+        .footer-column {
+            flex: 1 1 200px;
+            text-align: left;
+        }
+        .footer-column h4 {
+            color: #f0a500;
+            margin-bottom: 10px;
+        }
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+        .social-icons a:hover {
+            color: #f0a500;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/logo/lion-removebg-preview.png" alt="Sri Lanka Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="beaches.html">Beaches</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hills.html">Hill Country</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cultural.html">Cultural Triangle</a></li>
+                    <li class="nav-item"><a class="nav-link" href="waterfalls.html">Waterfalls</a></li>
+                    <li class="nav-item"><a class="nav-link" href="camping.html">Camping Sites</a></li>
+                    <li class="nav-item"><a class="nav-link" href="forest.html">Forests</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="home bg-black text-white border-radius 10%">
+        <div id="home-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <img src="assets/places/camping/Image-by-StockSnap-from-Pixabay.webp" class="d-block w-100" alt="Camping Sites">
+                    <div class="carousel-caption text-center">
+                        <h1>Camping Sites of Sri Lanka</h1>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <img src="assets/places/camping/camping-in-wisconsin-huckleberry-acres.jpg" class="d-block w-100" alt="Camping">
+                    <div class="carousel-caption text-center">
+                        <h1>Camping Sites of Sri Lanka</h1>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <img src="assets/places/camping/camping-in-sri-lanka.jpg" class="d-block w-100" alt="Camping">
+                    <div class="carousel-caption text-center">
+                        <h1>Camping Sites of Sri Lanka</h1>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#home-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#home-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Camping Sections -->
+    <section class="camping-section">
+        <div class="container">
+            <h2 class="text-center">Explore Our Beautiful Camping Sites</h2>
+            <div class="row g-4">
+                <!-- Camping Site 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card camping-card">
+                        <img src="assets/places/yala.jpg" class="card-img-top" alt="Yala National Park">
+                        <div class="card-body text-center">
+                            <h3>Yala National Park</h3>
+                            <p>Yala National Park offers a unique camping experience with wildlife safaris and stunning landscapes.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Camping Site 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card camping-card">
+                        <img src="assets/places/udawalawe.jpg" class="card-img-top" alt="Udawalawe National Park">
+                        <div class="card-body text-center">
+                            <h3>Udawalawe National Park</h3>
+                            <p>Udawalawe National Park is perfect for camping and spotting elephants in their natural habitat.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Camping Site 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card camping-card">
+                        <img src="assets/places/horton-plains.jpg" class="card-img-top" alt="Horton Plains">
+                        <div class="card-body text-center">
+                            <h3>Horton Plains</h3>
+                            <p>Horton Plains offers a serene camping experience with breathtaking views and hiking trails.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Camping Site 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card camping-card">
+                        <img src="assets/places/knuckles.jpg" class="card-img-top" alt="Knuckles Mountain Range">
+                        <div class="card-body text-center">
+                            <h3>Knuckles Mountain Range</h3>
+                            <p>Knuckles Mountain Range is ideal for adventurous campers, offering challenging hikes and stunning vistas.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Camping Site 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card camping-card">
+                        <img src="assets/places/wilpattu.jpg" class="card-img-top" alt="Wilpattu National Park">
+                        <div class="card-body text-center">
+                            <h3>Wilpattu National Park</h3>
+                            <p>Wilpattu National Park is known for its dense forests and wildlife, perfect for a secluded camping experience.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Camping Site 6 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card camping-card">
+                        <img src="assets/places/sinharaja.jpg" class="card-img-top" alt="Sinharaja Forest Reserve">
+                        <div class="card-body text-center">
+                            <h3>Sinharaja Forest Reserve</h3>
+                            <p>Sinharaja Forest Reserve offers a unique camping experience in a UNESCO World Heritage site with rich biodiversity.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-3 bg-black text-center">
+        <p>&copy; 2024 Discover Sri Lanka. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

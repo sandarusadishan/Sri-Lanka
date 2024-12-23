@@ -11,6 +11,7 @@
             font-family: Arial, sans-serif;
             background-color: #1a1a1a;
             color: white;
+            scroll-behavior: smooth; /* Smooth scrolling */
         }
         .navbar {
             background-color: black;
@@ -24,17 +25,29 @@
         .navbar-nav .nav-link:hover {
             color: #f0a500 !important;
         }
-        .hero-section {
-            background: url('../assets/places/hill-country-hero.jpg') no-repeat center center/cover;
-            height: 60vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
+        /* Hero Section */
+        #home-carousel {
+            height: 100vh;
         }
-        .hero-section h1 {
-            font-size: 3rem;
-            color: white;
+        .carousel-inner {
+            height: 100%;
+        }
+        .carousel-item img {
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(70%);
+        }
+        .carousel-caption {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .carousel-caption h1 {
+            font-size: 4rem;
+            font-weight: bold;
+        }
+        .carousel-caption p {
+            font-size: 1.5rem;
         }
         .hill-section {
             padding: 4rem 0;
@@ -68,6 +81,30 @@
             text-align: center;
             padding: 1rem 0;
         }
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            padding: 20px 0;
+        }
+        .footer-column {
+            flex: 1 1 200px;
+            text-align: left;
+        }
+        .footer-column h4 {
+            color: #f0a500;
+            margin-bottom: 10px;
+        }
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+        .social-icons a:hover {
+            color: #f0a500;
+        }
     </style>
 </head>
 <body>
@@ -75,7 +112,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="../assets/logo/lion-removebg-preview.png" alt="Sri Lanka Logo">
+                <img src="assets/logo/lion-removebg-preview.png" alt="Sri Lanka Logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -86,17 +123,49 @@
                     <li class="nav-item"><a class="nav-link" href="beaches.html">Beaches</a></li>
                     <li class="nav-item"><a class="nav-link" href="hills.html">Hill Country</a></li>
                     <li class="nav-item"><a class="nav-link" href="cultural.html">Cultural Triangle</a></li>
-                    <li class="nav-item"><a class="nav-link" href="activities.html">Activities</a></li>
-                    <li class="nav-item"><a class="nav-link" href="food.html">Food & Cuisine</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="waterfalls.html">Waterfalls</a></li>
+                    <li class="nav-item"><a class="nav-link" href="camping.html">Camping Sites</a></li>
+                    <li class="nav-item"><a class="nav-link" href="forests.html">Forests</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-section">
-        <h1>Hill Country of Sri Lanka</h1>
+    <section id="home" class="home bg-black text-white border-radius 10%">
+        <div id="home-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <img src="assets/places/hills/pidurutalagala-mountain-nuwara-eliya-sri-lanka.jpg" class="d-block w-100" alt="Hill Country">
+                    <div class="carousel-caption text-center">
+                        <h1>Hill Country of Sri Lanka</h1>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <img src="assets/places/hills/View_of_Knuckles_Mountain_range.jpg" class="d-block w-100" alt="Ella">
+                    <div class="carousel-caption text-center">
+                        <h1>Hill Country of Sri Lanka</h1>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <img src="assets/places/hills/sripadaya.jpg" class="d-block w-100" alt="Nuwara Eliya">
+                    <div class="carousel-caption text-center">
+                        <h1>Hill Country of Sri Lanka</h1>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#home-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#home-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </section>
 
     <!-- Hill Country Sections -->
@@ -137,7 +206,7 @@
                 <!-- Hill Country 4 -->
                 <div class="col-lg-4 col-md-6">
                     <div class="card hill-card">
-                        <img src="../assets/places/haputale.jpg" class="card-img-top" alt="Haputale">
+                        <img src="assets/places/haputale.jpg" class="card-img-top" alt="Haputale">
                         <div class="card-body text-center">
                             <h3>Haputale</h3>
                             <p>Haputale offers stunning views of the southern plains and is a great spot for hiking and nature walks.</p>
@@ -147,7 +216,7 @@
                 <!-- Hill Country 5 -->
                 <div class="col-lg-4 col-md-6">
                     <div class="card hill-card">
-                        <img src="../assets/places/bandarawela.jpg" class="card-img-top" alt="Bandarawela">
+                        <img src="assets/places/bandarawela.jpg" class="card-img-top" alt="Bandarawela">
                         <div class="card-body text-center">
                             <h3>Bandarawela</h3>
                             <p>Bandarawela is a peaceful town known for its pleasant climate and beautiful tea estates.</p>
@@ -157,7 +226,7 @@
                 <!-- Hill Country 6 -->
                 <div class="col-lg-4 col-md-6">
                     <div class="card hill-card">
-                        <img src="../assets/places/hatton.jpg" class="card-img-top" alt="Hatton">
+                        <img src="assets/places/hatton.jpg" class="card-img-top" alt="Hatton">
                         <div class="card-body text-center">
                             <h3>Hatton</h3>
                             <p>Hatton is the gateway to Adam's Peak, a popular pilgrimage site with stunning sunrise views.</p>
@@ -168,10 +237,10 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Discover Sri Lanka. All Rights Reserved.</p>
-    </footer>
+ <!-- Footer -->
+ <footer>
+    <p>&copy; 2024 Discover Sri Lanka. All Rights Reserved.</p>
+  </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
